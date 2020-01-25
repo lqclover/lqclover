@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Job Application</title>
+</head>
+<body>
+    <h1><label>Consulting Job Application Form</label></h1>
+    <div class = "mainContent">
+        <form name = "input" form action="https://formspree.io/xyyeqvov" method="POST">
+            <fieldset>
+                <legend><label>Info</label> </legend>
+                <label>First name:</label> <input type="text" name="firstname"><br> 
+                <label>Last name:</label> <input type="text" name="lastname"> <br>
+                <label>Email:</label> <input type="email" name="_replyto"> <br> 
+            </fieldset>
+            
+            <fieldset>
+                <legend> Job related </legend>
+                Why do you want to become a consultant? <br>
+                <textarea name="essay">Answer here.</textarea><br>
+                what type of consultant? <br>
+                <input type="radio" name="types" value="Strategy"> Strategy Consultant<br> 
+                <input type="radio" name="types" value="Management"> Management Consultant<br>
+                <input type="radio" name="types" value="Operations"> Operations Consultant<br>
+                <input type="radio" name="types" value="Financial"> Financial Advisory Consultant<br>
+                <input type="radio" name="types" value="HR"> Human Resource Consultant<br>
+                <input type="radio" name="types" value="IT"> IT Consultant<br>
+            </fieldset>
+
+            <fieldset>
+                <legend> More info </legend>
+                Where do you want to work? <br>
+                <input type="checkbox" name="location" value="USA">USA<br> 
+                <input type="checkbox" name="location" value="China">China<br>
+                <input type="checkbox" name="location" value="Europe">Europe<br> 
+                <input type="checkbox" name="location" value="Globally">Global<br>
+
+                Where are you from?
+                <select name="country"> <option value="North America">North America</option> <option value="Africa">Africa</option> <option value="Europe">Europe</option> <option value="Asia">Asia</option><option value="South America">South America</option> </select><br>
+                
+
+                What is your najor? <br>
+                <select>
+                    <optgroup label="Technology">
+                      <option value="CS">CS</option>
+                      <option value="Informatics">Informatics</option>
+                      <option value="HCDE">HCDE</option>
+                      <option value="Machine learning">Machine learning</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                      <option value="Accounting">Accounting</option>
+                      <option value="Management">Management</option>
+                      <option value="Finance">Finance</option>
+                      <option value="HR">HR</option>
+                    </optgroup>
+                    <optgroup label="Others">
+                        <option value="Math">Math</option>
+                        <option value="Statistics">Statistics</option>
+                        <option value="Education">Education</option>
+                        <option value="Psychology">Psychology</option>
+                    </optgroup>
+                   
+
+                </select>
+
+
+            </fieldset>
+
+                Test: <br>
+                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="number" id="b" value="600">
+                    +<input type="number" id="b" value="200">
+                    =<output name="x" for="a b"></output>
+                 </form>
+
+                 Check: <br>
+                 <form id="form" oninput="result.value=parseInt(field1.value)+parseInt(field2.value)">
+                    <input type="number" name="field1" id="field1" value="600"> +
+                    <input type="number" name="field2" id="field2" value="200">
+                    = <output name="result" id="result" value="document.write(this.result.value)"></output>
+                  </form>
+
+            <input type="submit" value="send"><br>
+            
+            
+
+            
+        </form>
+    </div>
+</body>
+</html>
